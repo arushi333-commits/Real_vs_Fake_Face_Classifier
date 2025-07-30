@@ -94,11 +94,33 @@ Upload it in the appropriate cell when prompted in the notebook
 
 ---
 
-## 🤖 About the Trained Model
+🤖 About the Trained Model
 
-* The model is saved as a `.pth` file after training
-* **IMPORTANT:** The model file (e.g., `face_classifier_20250729_194456.pth`) **must be in the same directory** as the deployment code to run correctly
-* Alternatively, store it in a known path and update `model_path` in the code accordingly
+The model is saved as a .pth file after training
+
+IMPORTANT: The model file (e.g., face_classifier_20250729_194456.pth) must be in the same directory as the deployment code to run correctly
+
+Alternatively, store it in a known path and update model_path in the code accordingly
+
+📂 Google Drive Sharing Instruction
+
+To ensure the model loads correctly during notebook execution:
+
+The model is accessed using the path:
+
+/content/drive/MyDrive/face-classification-data/models/face_classifier_20250729_194456.pth
+
+To replicate this setup:
+
+Upload the .pth model file to your own Google Drive under the folder path:
+/MyDrive/face-classification-data/models/
+
+Mount your Google Drive in the notebook using:
+
+from google.colab import drive
+drive.mount('/content/drive')
+
+Make sure the filename matches exactly, or update the model_path variable in the notebook accordingly.
 
 ---
 
