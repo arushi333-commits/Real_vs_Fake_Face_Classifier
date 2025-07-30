@@ -102,25 +102,16 @@ IMPORTANT: The model file (e.g., face_classifier_20250729_194456.pth) must be in
 
 Alternatively, store it in a known path and update model_path in the code accordingly
 
-📂 Google Drive Sharing Instruction
+🔗 Download Trained Model
 
-To ensure the model loads correctly during notebook execution:
+Click https://www.dropbox.com/scl/fi/oaukl434i4yhf5jg64adt/face_classifier_20250729_194456.pth?rlkey=fvjxblnmyofjlo2rr2mw61fvu&st=mfud46kx&dl=1  to download the model file via Dropbox
 
-The model is accessed using the path:
+Once downloaded, upload the .pth file into Colab's /content directory using the left-hand file browser.
 
-/content/drive/MyDrive/face-classification-data/models/face_classifier_20250729_194456.pth
+No changes to the code are necessary if the file is named the same.
+IMPORTANT!!!
+If you wish to chnage the file name make appropriate chnages to model_path = "/content/your_custom_model_name.pth"
 
-To replicate this setup:
-
-Upload the .pth model file to your own Google Drive under the folder path:
-/MyDrive/face-classification-data/models/
-
-Mount your Google Drive in the notebook using:
-
-from google.colab import drive
-drive.mount('/content/drive')
-
-Make sure the filename matches exactly, or update the model_path variable in the notebook accordingly.
 
 ---
 
