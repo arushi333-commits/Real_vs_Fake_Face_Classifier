@@ -109,8 +109,11 @@ Click https://www.dropbox.com/scl/fi/oaukl434i4yhf5jg64adt/face_classifier_20250
 Once downloaded, upload the .pth file into Colab's /content directory using the left-hand file browser.
 
 No changes to the code are necessary if the file is named the same.
+
+
+
 IMPORTANT!!!
-If you wish to chnage the file name make appropriate chnages to model_path = "/content/your_custom_model_name.pth"
+If you wish to change the file name make appropriate chnages to model_path = "/content/your_custom_model_name.pth"
 
 
 ---
